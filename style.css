@@ -1,0 +1,80 @@
+
+  :root {
+    --primary: #0f9b8e;
+    --bg-light: #f8f9fa;
+    --bg-dark: #0d1b2a;
+    --text-dark: #212529;
+    --text-light: #f8f9fa;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: var(--bg-dark);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+  }
+  nav a {
+    color: var(--text-light);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: var(--primary);
+  }
+  header {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f9b8e, #3a7bd5);
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  header img {
+    border-radius: 50%;
+    width: 150px;
+    border: 4px solid white;
+    margin-bottom: 20px;
+  }
+  section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  .card {
+    background: var(--bg-light);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .skills-grid, .projects-grid, .certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  footer {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px;
+  }
