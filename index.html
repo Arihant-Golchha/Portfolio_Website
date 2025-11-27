@@ -1,91 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ARihant Golchha</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arihant Golchha | AI & Data Science</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#skills">Skills</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <nav>
+    <div class="logo">AG.</div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<header>
-  <img src="my_image.jpg" alt="Profile Picture">
-  <h1>Hi There! <br> I am Arihant Golchha</h1>
-  <p>Artificial Intellegence & Data Science</p>
-</header>
+  <header>
+    <div class="hero-text">
+      <p class="intro">Hi, my name is</p>
+      <h1>Arihant Golchha.</h1>
+      <h2>I build intelligent solutions.</h2>
+      <p>I am an AI & Data Science student passionate about exploring machine learning models and turning complex data
+        into actionable insights.</p>
+      <a href="#contact" class="btn">Get In Touch</a>
+    </div>
+    <div class="hero-image">
+      <img src="profile.png" alt="Arihant Golchha">
+    </div>
+  </header>
 
-<section id="about">
-  <h2><i class="fas fa-user"></i> About Me</h2>
-  <div class="card">
-    <p>I am an AI & Data Science student passionate about building intelligent solutions, exploring machine learning models, and turning data into insights.</p>
-  </div>
-</section>
-
-<section id="education">
-  <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-  <div class="card">
-    <p><strong>B.E. in AI & Data Science</strong><br>M.B.M University (2024–2028)</p>
-    <p><strong>Class 12th</strong><br>Apna Vidyalaya senior sec. school (2022)</p>
-  </div>
-</section>
-
-<section id="skills">
-  <h2><i class="fas fa-code"></i> Skills</h2>
-  <div class="skills-grid">
-    <div class="card">Python</div>
-    <div class="card">C++</div>
-    <div class="card">Data Structure and Algorithm</div>
-    <div class="card">Object Oriented Programming</div>
-    <div class="card">Problem Solving</div>
-    <div class="card">Data Science</div>
-  </div>
-</section>
-
-<!--<section id="projects">
-  <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-  <div class="projects-grid">
-    <div class="card">
-      <strong>ML Model for ...</strong>
-      <p>Short description of the project.</p>
+  <section id="about" class="hidden">
+    <div class="section-title">
+      <h2>About Me</h2>
     </div>
     <div class="card">
-      <strong>Data Pipeline for ...</strong>
-      <p>Short description of the project.</p>
+      <p>Hello! My name is Arihant and I enjoy creating things that live on the internet. My interest in AI and Data
+        Science started when I decided to explore how machines learn, which led me to a deep dive into Python and
+        algorithms.</p>
+      <br>
+      <p>Fast-forward to today, and I've had the privilege of working on various projects, from simple scripts to
+        complex ML models. My main focus these days is building accessible, inclusive products and digital experiences.
+      </p>
     </div>
-  </div>
-</section>-->
+  </section>
 
-<section id="certifications">
-  <h2><i class="fas fa-certificate"></i> Certifications</h2>
-  <div class="certs-grid">
-    <div class="card">Google solution Hackthon Participant</div>
-   <!-- <div class="card">AWS Cloud Practitioner</div>
-    <div class="card">TensorFlow Developer</div>
-  --></div>
-</section>
+  <section id="education" class="hidden">
+    <div class="section-title">
+      <h2>Education</h2>
+    </div>
+    <div class="card">
+      <h3>B.E. in AI & Data Science</h3>
+      <p>M.B.M University (2024–2028)</p>
+    </div>
+    <div class="card">
+      <h3>Class 12th</h3>
+      <p>Apna Vidyalaya senior sec. school (2022)</p>
+    </div>
+  </section>
 
-<section id="contact">
-  <h2><i class="fas fa-envelope"></i> Contact</h2>
-  <div class="card">
-    <p>Email: Golchhaarihant08@gmail.com</p>
-    <p style="text-decoration: none;">LinkedIn: <a href="https://www.linkedin.com/in/arihant-golchha-086460342" target="_blank" style="text-decoration: none; ">www.linkedin.com/in/arihant-golchha-086460342 </a></p>
-  </div>
-</section>
+  <section id="skills" class="hidden">
+    <div class="section-title">
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-item">Python</div>
+      <div class="skill-item">C++</div>
+      <div class="skill-item">Data Structures</div>
+      <div class="skill-item">Algorithms</div>
+      <div class="skill-item">OOP</div>
+      <div class="skill-item">Data Science</div>
+      <div class="skill-item">Machine Learning</div>
+      <div class="skill-item">Problem Solving</div>
+    </div>
+  </section>
 
-<footer>
-  © 2025 Arihant Golchha
-</footer>
+  <section id="certifications" class="hidden">
+    <div class="section-title">
+      <h2>Certifications</h2>
+    </div>
+    <div class="certs-grid">
+      <div class="card">
+        <h3>Google Solution Hackathon</h3>
+        <p>Participant</p>
+      </div>
+      <!-- Add more certs here -->
+    </div>
+  </section>
 
+  <section id="contact" class="hidden">
+    <p class="intro">What's Next?</p>
+    <h2>Get In Touch</h2>
+    <p>I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to
+      say hi, I'll try my best to get back to you!</p>
+    <a href="mailto:Golchhaarihant08@gmail.com" class="btn">Say Hello</a>
+    <br><br>
+    <p>
+      <a href="https://www.linkedin.com/in/arihant-golchha-086460342" target="_blank"
+        style="color: var(--primary); text-decoration: none;">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>Designed & Built by Arihant Golchha</p>
+    <p>© 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
-
-
